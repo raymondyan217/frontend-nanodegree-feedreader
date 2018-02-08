@@ -59,7 +59,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
         it('is hidden by default', function() {
-          expect($('.menu-hidden').length).toBe(1);
+          expect($('body.menu-hidden').length).toBe(1);
         });
 
          /* ensures the menu changes
@@ -70,9 +70,9 @@ $(function() {
       
         it('toggles visiblity when clicked', function() {
           $('.menu-icon-link').click();
-          expect($('.menu-hidden').length).toBe(0);
+          expect($('body.menu-hidden').length).toBe(0);
           $('.menu-icon-link').click();
-          expect($('.menu-hidden').length).toBe(1);
+          expect($('body.menu-hidden').length).toBe(1);
         });
       
     });
